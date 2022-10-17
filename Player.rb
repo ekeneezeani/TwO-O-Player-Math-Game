@@ -1,5 +1,6 @@
 class Player 
-  attr_accessor :name, :lives
+  attr_reader :name
+  attr_accessor :lives
   def initialize(name)
     @name = name
     @lives = 3
@@ -11,6 +12,3 @@ class Player
 
 end
 
-# P1 = Player.new("Ek")
-
-# puts P1.life_remaining
